@@ -1,1 +1,6 @@
-fastapi[all]
+fastapi
+requests
+uvicorn
+pmdarima
+numpy
+statsmodels
