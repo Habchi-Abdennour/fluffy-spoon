@@ -23,7 +23,7 @@ class TimeSeriesAnalysis:
             self.df['ordered'] = self.df['ordered'] - self.df['ordered'].shift(1)
             self.df['ordered'] = self.df['ordered'].fillna(self.df['ordered'].mean())
 
-    def fit_arima_model(self, train_size=0.7):
+    def fit_arima_model(self, train_size=0.9):
         train_index = int(len(self.df) * train_size)
         train_data = self.df['ordered'][:train_index]
 
